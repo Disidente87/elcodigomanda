@@ -120,7 +120,7 @@ export default {
             },
             code: {
               color: theme('colors.accent.foreground'),
-              backgroundColor: theme('colors.accent.DEFAULT / 0.1)'),
+              backgroundColor: 'hsl(var(--accent) / 0.1)',
               padding: '0.2rem 0.4rem',
               borderRadius: '0.2rem',
             },
