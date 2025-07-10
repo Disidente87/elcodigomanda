@@ -26,7 +26,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2">
           <Logo className="h-6 w-6 text-primary" />
           <span className="font-headline text-xl font-bold text-foreground">
-            BlockWise Hub
+            El Codigo Manda
           </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">

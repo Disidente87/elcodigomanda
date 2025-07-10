@@ -12,7 +12,7 @@ export function Footer() {
             <Link href="/" className="flex items-center gap-2">
               <Logo className="h-6 w-6 text-primary" />
               <span className="font-headline text-xl font-bold text-foreground">
-                BlockWise Hub
+                El Codigo Manda
               </span>
             </Link>
             <p className="text-muted-foreground text-sm">
@@ -47,7 +47,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-border mt-8 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} BlockWise Hub. Todos los derechos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} El Codigo Manda. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

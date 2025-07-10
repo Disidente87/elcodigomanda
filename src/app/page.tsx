@@ -40,8 +40,8 @@ export default function Home() {
               <div className="md:flex">
                 <div className="md:w-1/2">
                   <Image
-                    src="https://placehold.co/600x400.png"
-                    alt="Artículo destacado"
+                    src="/rwa.png"
+                    alt="Real World Assets"
                     width={600}
                     height={400}
                     className="object-cover h-full w-full"

@@ -5,7 +5,7 @@ import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'BlockWise Hub',
+  title: 'Code is Law',
   description: 'Artículos, investigación y consultoría en Blockchain.',
   keywords: ['blockchain', 'Tokenomics', 'educación técnica', 'consultoría', 'investigación']
 };
