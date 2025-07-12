@@ -25,11 +25,11 @@ export default function ContactPage() {
                 <div className="space-y-6 text-muted-foreground">
                     <div className="flex items-center gap-4">
                         <Mail className="h-6 w-6 text-primary" />
-                        <span>contacto@blockwisehub.com</span>
+                        <span>contacto@elcodigomanda.com</span>
                     </div>
                     <div className="flex items-center gap-4">
                         <Phone className="h-6 w-6 text-primary" />
-                        <span>+1 (555) 123-4567</span>
+                        <span>+52 (665) 104 90 02</span>
                     </div>
                     <div className="flex items-start gap-4">
                         <MapPin className="h-6 w-6 text-primary mt-1" />
