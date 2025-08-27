@@ -9,7 +9,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "vercel-build": "next build",
+    "vercel-dev": "next dev",
+    "deploy": "vercel --prod"
   },
   "dependencies": {
     "@genkit-ai/googleai": "^1.13.0",

@@ -1,0 +1,7 @@
+# Redirects for elcodigomanda.com
+/www / 301
+/http://www.elcodigomanda.com / 301
+/https://www.elcodigomanda.com / 301
+
+# Handle trailing slashes
+/* /index.html 200
