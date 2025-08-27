@@ -13,10 +13,6 @@
       "dest": "/$1"
     }
   ],
-  "domains": [
-    "elcodigomanda.com",
-    "www.elcodigomanda.com"
-  ],
   "redirects": [
     {
       "source": "/www",
