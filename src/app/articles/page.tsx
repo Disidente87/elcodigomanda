@@ -9,9 +9,12 @@ const categories = ['Todos', 'DeFi', 'Staking', 'Tecnología', 'Análisis', 'Gob
 
 export default function ArticlesPage() {
   const [filter, setFilter] = useState('Todos');
+  
+  const sortedArticles = [...mockArticles].reverse();
 
-  const freeArticles = mockArticles.filter(a => !a.isExclusive && (filter === 'Todos' || a.category === filter));
-  const exclusiveArticles = mockArticles.filter(a => a.isExclusive && (filter === 'Todos' || a.category === filter));
+  // Y aquí se usa la nueva lista ordenada
+  const freeArticles = sortedArticles.filter(a => !a.isExclusive && (filter === 'Todos' || a.category === filter));
+  const exclusiveArticles = sortedArticles.filter(a => a.isExclusive && (filter === 'Todos' || a.category === filter));
   
   return (
     <div className="container mx-auto px-4 md:px-6 py-16 md:py-24">

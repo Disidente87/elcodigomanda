@@ -4,8 +4,18 @@ import { ArrowRight, BrainCircuit, Mic, FileText, BarChart, FileJson } from "luc
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { mockArticles } from "./articles/articles-data";
+import { notFound } from "next/navigation";
 
 export default function Home() {
+  const featuredArticleId = '10';
+  const featuredArticle = mockArticles.find(a => a.id === featuredArticleId);
+
+  if (!featuredArticle) {
+    // Fallback or just don't render the section if article not found
+    return <div>Artículo destacado no encontrado.</div>;
+  }
+
   return (
     <>
       {/* Hero Section */}
@@ -15,7 +25,7 @@ export default function Home() {
             Navega el Futuro de la <span className="text-primary">Blockchain</span>
           </h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg md:text-xl text-muted-foreground">
-            Artículos especializados, investigación y consultoría para potenciar tus proyectos en el ecosistema cripto.
+            Artículos especializados, investigación, análisis y consultoría para potenciar tus proyectos en el ecosistema cripto.
           </p>
           <div className="mt-8 flex justify-center gap-4">
             <Button asChild size="lg">
@@ -40,27 +50,27 @@ export default function Home() {
               <div className="md:flex">
                 <div className="md:w-1/2">
                   <Image
-                    src="/rwa.png"
-                    alt="Real World Assets"
+                    src={featuredArticle.imageUrl}
+                    alt={featuredArticle.title}
                     width={600}
                     height={400}
                     className="object-cover h-full w-full"
-                    data-ai-hint="blockchain data"
+                    data-ai-hint={featuredArticle.imageHint}
                   />
                 </div>
                 <div className="md:w-1/2 flex flex-col">
                   <CardHeader>
-                    <CardTitle className="font-headline text-2xl">El Futuro de la Tokenización de Activos Reales (RWA)</CardTitle>
+                    <CardTitle className="font-headline text-2xl">{featuredArticle.title}</CardTitle>
                     <CardDescription className="pt-2">
-                      Exploramos cómo la tokenización de activos del mundo real está revolucionando las finanzas tradicionales y qué oportunidades presenta para inversores.
+                      {featuredArticle.description}
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-muted-foreground">Publicado: 15 de Julio, 2024</p>
+                    <p className="text-sm text-muted-foreground">Publicado: {featuredArticle.date}</p>
                   </CardContent>
                   <CardFooter className="mt-auto">
                     <Button asChild className="w-full md:w-auto">
-                      <Link href="/articles/1">Leer Artículo Completo <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                      <Link href={`/articles/${featuredArticle.id}`}>Leer Artículo Completo <ArrowRight className="ml-2 h-4 w-4" /></Link>
                     </Button>
                   </CardFooter>
                 </div>
