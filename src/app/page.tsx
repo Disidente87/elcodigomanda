@@ -8,7 +8,7 @@ import { mockArticles } from "./articles/articles-data";
 import { notFound } from "next/navigation";
 
 export default function Home() {
-  const featuredArticleId = '11';
+  const featuredArticleId = '12';
   const featuredArticle = mockArticles.find(a => a.id === featuredArticleId);
 
   if (!featuredArticle) {

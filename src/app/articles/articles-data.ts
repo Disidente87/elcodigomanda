@@ -8,7 +8,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/rwa.png',
     imageHint: 'blockchain finance',
     category: 'DeFi',
-    date: '4 de Mayo, 2025',
+    date: '4 de Junio, 2025',
     isExclusive: false,
   },
   {
@@ -18,7 +18,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/ethereum.png',
     imageHint: 'ethereum network',
     category: 'Staking',
-    date: '18 de Mayo, 2025',
+    date: '18 de Junio, 2025',
     isExclusive: true,
   },
   {
@@ -28,7 +28,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/oraculos.png',
     imageHint: 'data network',
     category: 'Tecnología',
-    date: '22 de Mayo, 2025',
+    date: '22 de Junio, 2025',
     isExclusive: false,
   },
   {
@@ -38,7 +38,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/sol_aptos.png',
     imageHint: 'data comparison',
     category: 'Análisis',
-    date: '1 de Junio, 2025',
+    date: '1 de Julio, 2025',
     isExclusive: false,
   },
    {
@@ -48,7 +48,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/dao.png',
     imageHint: 'organization chart',
     category: 'Gobernanza',
-    date: '5 de Junio, 2025',
+    date: '5 de Julio, 2025',
     isExclusive: true,
   },
   {
@@ -58,7 +58,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/seguridad.png',
     imageHint: 'digital security',
     category: 'Seguridad',
-    date: '17 de Junio, 2025',
+    date: '17 de Julio, 2025',
     isExclusive: false,
   },
   {
@@ -68,7 +68,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/layer2.png',
     imageHint: 'Layers ',
     category: 'Tecnologia',
-    date: '26 de Junio, 2025',
+    date: '26 de Julio, 2025',
     isExclusive: false,
   },
   {
@@ -78,7 +78,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/crosschain.png',
     imageHint: 'Puentes',
     category: 'DeFi',
-    date: '1 de Julio, 2025',
+    date: '1 de Agosto, 2025',
     isExclusive: true,
   },
   {
@@ -88,7 +88,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/defi2.png',
     imageHint: 'Staking',
     category: 'Staking',
-    date: '15 de Julio, 2025',
+    date: '15 de Agosto, 2025',
 
     isExclusive: false,
   },
@@ -99,7 +99,7 @@ export const mockArticles: Article[] = [
     imageUrl: '/pow-vs-pos.png',
     imageHint: 'Concenso',
     category: 'Tecnologia',
-    date: '2 de Agosto, 2025',
+    date: '2 de Septiembre, 2025',
     isExclusive: false,
   },
   {
@@ -109,7 +109,17 @@ export const mockArticles: Article[] = [
     imageUrl: '/cript-amb.png',
     imageHint: 'Criptomonedas y Medio Ambiente',
     category: 'Analisis',
-    date: '24 de Agosto, 2025',
+    date: '24 de Septiembre, 2025',
+    isExclusive: false,
+  },
+  {
+    id: '12',
+    title: 'Inteligencia Artificial y Blockchain: Convergencia Tecnológica',
+    description: 'La IA y la blockchain se están uniendo para crear un nuevo ecosistema tecnológico.',
+    imageUrl: '/ia-blockchainpng',
+    imageHint: 'IA y Blockchain',
+    category: 'Analisis',
+    date: '15 de Octubre, 2025',
     isExclusive: false,
   },
 
