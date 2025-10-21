@@ -116,7 +116,7 @@ export const mockArticles: Article[] = [
     id: '12',
     title: 'Inteligencia Artificial y Blockchain: Convergencia Tecnológica',
     description: 'La IA y la blockchain se están uniendo para crear un nuevo ecosistema tecnológico.',
-    imageUrl: '/ia-blockchainpng',
+    imageUrl: '/ia-blockchain.png',
     imageHint: 'IA y Blockchain',
     category: 'Analisis',
     date: '15 de Octubre, 2025',
